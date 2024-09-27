@@ -22,9 +22,9 @@ const Header = ({ data }) => {
         <Link className="text-blue-400"> more</Link>
       </p>
       <p className="text-white">
-        <i class="text-yellow-500 ri-megaphone-fill"></i>
+        <i className="text-yellow-500 ri-megaphone-fill"></i>
         {data.release_date || "No Information"}
-        <i class="ml-5 text-yellow-500 ri-album-fill"></i>
+        <i className="ml-5 text-yellow-500 ri-album-fill"></i>
         {data.media_type.toUpperCase()}
       </p>
       <Link className="bg-[#6556CD] mt-3 p-3 rounded text-white"> Watch Trailer</Link>
