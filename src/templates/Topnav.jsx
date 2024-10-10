@@ -1,4 +1,4 @@
-import axios from "../Utils/axios";
+import axios from '../utils/axios';
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import noimage from "/noimage.jpg"
@@ -37,10 +37,11 @@ const Topnav = () => {
         ></i>
       )}
 
-      <div className="absolute w-[50%] max-h-[50vh] bg-zinc-200 top-[100%] left-[5%] ml-[5%] overflow-auto">
-        {searches.map((s, i) => (
+      <div className="z-[100] absolute w-[50%] max-h-[50vh] bg-zinc-200 top-[100%] left-[5%] ml-[5%] overflow-auto">
+        {searches.map((s) => (
           <Link
-            key={i}
+            to={`/${s.media_type}/details/${s.id}`}
+            key={s.id}
             className="hover:text-black hover:bg-zinc-300 duration-300 font-semibold text-zinc-600 w-[100%] p-10 flex justify-start items-center border-b-2 border-zinc-100"
           >
             <img

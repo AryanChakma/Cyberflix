@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Dropdown = ({ title, options, func }) => {
   return (
     <div className='select'>
@@ -7,8 +5,8 @@ const Dropdown = ({ title, options, func }) => {
                 <option value="0" disabled>
                     {title}
                 </option>
-                {options.map((o,i) => (
-                  <option value={o}>
+                {options.map((o) => (
+                  <option value={o} key={o.id}>
                     {o.toUpperCase()}
                   </option>
                 ))}
