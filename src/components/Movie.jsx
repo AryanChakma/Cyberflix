@@ -1,4 +1,4 @@
-import axios from '../utils/axios'; // Corrected file path casing
+import axios from '../Utils/axios'; // Corrected file path casing
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Loading from "./Loading";
