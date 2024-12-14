@@ -1,4 +1,4 @@
-import axios from "../../utils/axios";
+import axios from "../../Utils/axios";
 import { loadmovie } from "../reducers/movieSlice";
 export { removemovie } from "../reducers/movieSlice";
 
